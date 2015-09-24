@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>{{ championship.name }}</h1>
+    <table style="border: 1px solid gray;">
+        <thead>
+            <th style="width: 50px; text-align: left;">Day</th>
+            <th>Match</th>
+            <th>Date</th>
+        </thead>
+        <tbody>
+            {% for day in championship.days %}
+                {% for event in day.events %}
+                    <tr>
+                        <td>{{ day.day_number }}</td>
+                        <td style="width:200px; text-align: center;">{{ event.description }}</td>
+                        <td style="width:200px; text-align: right;">{{ event.start_at }}</td>
+                    </tr>
+                {% endfor %}
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{% url 'add_match' champ_id=championship.id %}">Add match</a>
+{% endblock %}

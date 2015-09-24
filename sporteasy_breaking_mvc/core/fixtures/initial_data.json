@@ -1,0 +1,91 @@
+[
+    {
+        "pk": 1,
+        "model": "sites.site",
+        "fields": {
+            "domain": "example.com",
+            "name": "Example"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "auth.user",
+        "fields": {
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "is_active": true,
+            "is_superuser": true,
+            "is_staff": true,
+            "last_login": "2013-09-04T19:00:00+02:00",
+            "groups": [],
+            "user_permissions": [],
+            "password": "sha1$ecf03$9606afde86e6051748ba7cc1236470dc4f44762b",
+            "email": "admin@exmaple.com",
+            "date_joined": "2013-09-03T19:00:00+02:00"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "core.EventTeam",
+        "fields": {
+            "name": "PSG"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "core.EventTeam",
+        "fields": {
+            "name": "Marseille"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "core.EventTeam",
+        "fields": {
+            "name": "Lyon"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "core.EventTeam",
+        "fields": {
+            "name": "Bordeaux"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "core.Championship",
+        "fields": {
+            "name": "League 1"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "core.ChampionshipDay",
+        "fields": {
+            "day": 1,
+            "championship": 1
+        }
+    },
+    {
+        "pk": 1,
+        "model": "core.Event",
+        "fields": {
+            "team1": 1,
+            "team2": 2,
+            "day": 1,
+            "start_at": "2013-09-01T10:00:00+02:00"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "core.Event",
+        "fields": {
+            "team1": 3,
+            "team2": 4,
+            "day": 1,
+            "start_at": "2013-09-02T10:00:00+02:00"
+        }
+    }
+]
